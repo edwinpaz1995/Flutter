@@ -7,6 +7,7 @@ class Recipes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
       child: getRecipes(),
     );
   }
@@ -15,11 +16,11 @@ class Recipes extends StatelessWidget {
     return Column(
       children: List.generate(recieps.length, (index) {
         return Padding(
-          padding: const EdgeInsets.only(left: 25, right: 25, top: 15),
+          padding: const EdgeInsets.only(left: 35, right: 35, top: 15),
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Color.fromARGB(148, 233, 233, 227)),
+                color: Color.fromARGB(244, 253, 253, 253)),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -47,7 +48,7 @@ class Recipes extends StatelessWidget {
                           recieps[index]['name'],
                           textAlign: TextAlign.left,
                           style: TextStyle(
-                              color: Color.fromARGB(255, 34, 34, 34),
+                              color: Color.fromARGB(255, 3, 7, 68),
                               fontSize: 12,
                               fontWeight: FontWeight.bold),
                         ),

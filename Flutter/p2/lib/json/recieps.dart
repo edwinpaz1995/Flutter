@@ -20,8 +20,16 @@ const List recieps = [
     "name": "Spagueti Krips",
     "precio": "\$ 4.50",
     "descripcion": "Tomate de granja",
-    "category": "Vegetal",
+    "category": "Pastas",
     "img":
         "https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/spain/custom/product-images/70-es-684367/spaghetti_knorr_producto.jpg"
+  },
+  {
+    "name": "Atún Alamar",
+    "precio": "\$ 5.50",
+    "descripcion": "Atún enlatado",
+    "category": "Enlatados",
+    "img":
+        "https://www.alamar.co/wp-content/uploads/2020/07/bocados-atun-en-agua.jpg"
   }
 ];
