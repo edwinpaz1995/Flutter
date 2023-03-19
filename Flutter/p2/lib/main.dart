@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:p2/paginas/menu.dart';
 
 void main() {
   runApp(const Principal());
@@ -9,6 +10,9 @@ class Principal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Menu(),
+    );
   }
 }
