@@ -14,7 +14,7 @@ class Groceries extends StatelessWidget {
     String Categories = "";
     return Container(
       height: double.infinity,
-      decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
+      decoration: BoxDecoration(color: Color.fromARGB(176, 253, 200, 93)),
       child: ListView(
         children: [getVegetales(), getEnlatados(), getPastas()],
       ),

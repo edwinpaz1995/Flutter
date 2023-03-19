@@ -8,7 +8,7 @@ class Plans extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: double.infinity,
-      decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
+      decoration: BoxDecoration(color: Color.fromARGB(176, 253, 200, 93)),
       child: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 25, vertical: 30),
         child: Column(
@@ -20,7 +20,7 @@ class Plans extends StatelessWidget {
             Text(
               'Formulario tarjeta de crédito',
               style: TextStyle(
-                  color: Color.fromARGB(232, 14, 61, 100),
+                  color:Color.fromARGB(255, 71, 16, 6),
                   fontSize: 20,
                   fontWeight: FontWeight.w700),
             ),
@@ -69,7 +69,7 @@ Widget buildTitular() {
           decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(top: 11),
-              prefixIcon: Icon(Icons.person, color: Color(0xff244e72)),
+              prefixIcon: Icon(Icons.person, color: Color(0xff471006)),
               hintText: 'Nombre del titular',
               hintStyle: TextStyle(
                   color: Color.fromARGB(134, 14, 61, 100),
@@ -101,7 +101,7 @@ Widget buildTarjeta() {
           decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(top: 11),
-              prefixIcon: Icon(Icons.credit_card, color: Color(0xff244e72)),
+              prefixIcon: Icon(Icons.credit_card, color:Color(0xff471006)),
               hintText: 'Tarjeta de crédito',
               hintStyle: TextStyle(
                   color: Color.fromARGB(134, 14, 61, 100),
@@ -133,7 +133,7 @@ Widget buildFechaExp() {
           decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(top: 11),
-              prefixIcon: Icon(Icons.date_range, color: Color(0xff244e72)),
+              prefixIcon: Icon(Icons.date_range, color: Color(0xff471006)),
               hintText: 'Fecha de expiración',
               hintStyle: TextStyle(
                   color: Color.fromARGB(134, 14, 61, 100),
@@ -165,7 +165,7 @@ Widget buildCVC() {
           decoration: InputDecoration(
               border: InputBorder.none,
               contentPadding: EdgeInsets.only(top: 11),
-              prefixIcon: Icon(Icons.password, color: Color(0xff244e72)),
+              prefixIcon: Icon(Icons.password, color: Color(0xff471006)),
               hintText: 'CVC',
               hintStyle: TextStyle(
                   color: Color.fromARGB(134, 14, 61, 100),

@@ -7,7 +7,7 @@ class Recipes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
+        decoration: BoxDecoration(color: Color.fromARGB(176, 253, 200, 93)),
         child: ListView(
           children: <Widget>[
             SizedBox(height: 50),
@@ -15,7 +15,7 @@ class Recipes extends StatelessWidget {
               child: Text(
                 'Listado de productos',
                 style: TextStyle(
-                    color: Color.fromARGB(232, 14, 61, 100),
+                    color: Color.fromARGB(255, 71, 16, 6),
                     fontSize: 28,
                     fontWeight: FontWeight.w700),
               ),

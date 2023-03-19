@@ -9,7 +9,7 @@ class Account extends StatelessWidget {
       height: double.infinity,
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Color.fromARGB(169, 153, 191, 223)
+        color: Color.fromARGB(176, 253, 200, 93)
       ),
       child: SingleChildScrollView(
         padding: EdgeInsets.symmetric(
@@ -31,7 +31,7 @@ class Account extends StatelessWidget {
               'Integrantes', 
               style: TextStyle
               (
-                color: Color.fromARGB(232, 14, 61, 100),
+                color: Color.fromARGB(255, 71, 16, 6),
                 fontSize: 20,
                 fontWeight: FontWeight.w700
               ),
@@ -44,7 +44,7 @@ class Account extends StatelessWidget {
               'Edwin Laureano Paz Juarez', 
               style: TextStyle
               (
-                color: Color.fromARGB(232, 14, 61, 100),
+                color: Color.fromARGB(255, 71, 16, 6),
                 fontSize: 20,
                 fontWeight: FontWeight.w700
               ),
@@ -57,7 +57,7 @@ class Account extends StatelessWidget {
               'Carnet: 25-1163-2016', 
               style: TextStyle
               (
-                color: Color.fromARGB(232, 14, 61, 100),
+                color: Color.fromARGB(255, 71, 16, 6),
                 fontSize: 20,
                 fontWeight: FontWeight.w700
               ),
@@ -70,7 +70,7 @@ class Account extends StatelessWidget {
               'Esmeralda Elizabeth Rivas Majano', 
               style: TextStyle
               (
-                color: Color.fromARGB(232, 14, 61, 100),
+                color: Color.fromARGB(255, 71, 16, 6),
                 fontSize: 20,
                 fontWeight: FontWeight.w700
               ),
@@ -83,7 +83,7 @@ class Account extends StatelessWidget {
               'Carnet: 25-4820-2018', 
               style: TextStyle
               (
-                color: Color.fromARGB(232, 14, 61, 100),
+                color: Color.fromARGB(255, 71, 16, 6),
                 fontSize: 20,
                 fontWeight: FontWeight.w700
               ),

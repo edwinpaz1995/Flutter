@@ -27,11 +27,19 @@ class _MenuState extends State<Menu> {
       body: Center(child: _paginas[_selectedIndex]),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.add), onPressed: () {}, tooltip: 'Increment'),
+        backgroundColor: Color.fromARGB(255, 245, 192, 20),
+          child: Icon(
+            Icons.add, 
+            color: Color.fromARGB(255, 0, 0, 0),
+            ), 
+            onPressed: () {}, tooltip: 'Increment'),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _navigateBottonBar,
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Color.fromARGB(255, 6, 40, 68),
+        unselectedItemColor: Colors.white,
+        selectedItemColor: Color.fromARGB(255, 245, 192, 20),
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.restaurant_menu), label: 'Recipes'),
