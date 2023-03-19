@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../json/enlatados.dart';
 import '../json/groceries_all.dart';
+import '../json/pastas.dart';
 import '../json/recieps.dart';
+import '../json/vegetal.dart';
 
 class Groceries extends StatelessWidget {
   const Groceries({super.key});
@@ -66,7 +69,7 @@ class Groceries extends StatelessWidget {
                       color: Color.fromARGB(255, 26, 25, 25).withOpacity(0.3)),
                 ),
                 Column(
-                  children: List.generate(recieps.length, (index) {
+                  children: List.generate(recieps_vegetales.length, (index) {
                     return Padding(
                       padding:
                           const EdgeInsets.only(left: 5, right: 5, top: 10),
@@ -84,8 +87,8 @@ class Groceries extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     image: DecorationImage(
-                                        image:
-                                            NetworkImage(recieps[index]['img']),
+                                        image: NetworkImage(
+                                            recieps_vegetales[index]['img']),
                                         fit: BoxFit.cover)),
                               ),
                               SizedBox(
@@ -99,7 +102,7 @@ class Groceries extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      recieps[index]['name'],
+                                      recieps_vegetales[index]['name'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color: Color.fromARGB(255, 3, 7, 68),
@@ -110,7 +113,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['category'],
+                                      recieps_vegetales[index]['category'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:
@@ -121,7 +124,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['precio'],
+                                      recieps_vegetales[index]['precio'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:
@@ -194,7 +197,7 @@ class Groceries extends StatelessWidget {
                       color: Color.fromARGB(255, 26, 25, 25).withOpacity(0.3)),
                 ),
                 Column(
-                  children: List.generate(recieps.length, (index) {
+                  children: List.generate(recieps_enlatados.length, (index) {
                     return Padding(
                       padding:
                           const EdgeInsets.only(left: 5, right: 5, top: 10),
@@ -212,8 +215,8 @@ class Groceries extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     image: DecorationImage(
-                                        image:
-                                            NetworkImage(recieps[index]['img']),
+                                        image: NetworkImage(
+                                            recieps_enlatados[index]['img']),
                                         fit: BoxFit.cover)),
                               ),
                               SizedBox(
@@ -227,7 +230,7 @@ class Groceries extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      recieps[index]['name'],
+                                      recieps_enlatados[index]['name'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color: Color.fromARGB(255, 3, 7, 68),
@@ -238,7 +241,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['category'],
+                                      recieps_enlatados[index]['category'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:
@@ -249,7 +252,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['precio'],
+                                      recieps_enlatados[index]['precio'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:
@@ -322,7 +325,7 @@ class Groceries extends StatelessWidget {
                       color: Color.fromARGB(255, 26, 25, 25).withOpacity(0.3)),
                 ),
                 Column(
-                  children: List.generate(recieps.length, (index) {
+                  children: List.generate(recieps_pastas.length, (index) {
                     return Padding(
                       padding:
                           const EdgeInsets.only(left: 5, right: 5, top: 10),
@@ -340,8 +343,8 @@ class Groceries extends StatelessWidget {
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     image: DecorationImage(
-                                        image:
-                                            NetworkImage(recieps[index]['img']),
+                                        image: NetworkImage(
+                                            recieps_pastas[index]['img']),
                                         fit: BoxFit.cover)),
                               ),
                               SizedBox(
@@ -355,7 +358,7 @@ class Groceries extends StatelessWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      recieps[index]['name'],
+                                      recieps_pastas[index]['name'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color: Color.fromARGB(255, 3, 7, 68),
@@ -366,7 +369,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['category'],
+                                      recieps_pastas[index]['category'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:
@@ -377,7 +380,7 @@ class Groceries extends StatelessWidget {
                                       height: 5,
                                     ),
                                     Text(
-                                      recieps[index]['precio'],
+                                      recieps_pastas[index]['precio'],
                                       textAlign: TextAlign.left,
                                       style: TextStyle(
                                           color:

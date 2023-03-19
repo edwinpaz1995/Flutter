@@ -7,25 +7,25 @@ class Recipes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
-      child: Column(
-        children: <Widget>
-        [
-          SizedBox(height: 50),
-          Text(
-              'Listado de productos',
-              style: TextStyle(
-                  color: Color.fromARGB(232, 14, 61, 100),
-                  fontSize: 28,
-                  fontWeight: FontWeight.w700),
+        decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
+        child: ListView(
+          children: <Widget>[
+            SizedBox(height: 50),
+            Center(
+              child: Text(
+                'Listado de productos',
+                style: TextStyle(
+                    color: Color.fromARGB(232, 14, 61, 100),
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700),
+              ),
             ),
             SizedBox(
               height: 10,
             ),
             getRecipes()
-        ],
-      )      
-    );
+          ],
+        ));
   }
 
   Widget getRecipes() {
