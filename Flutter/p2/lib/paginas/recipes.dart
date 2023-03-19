@@ -8,7 +8,23 @@ class Recipes extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(color: Color.fromARGB(169, 153, 191, 223)),
-      child: getRecipes(),
+      child: Column(
+        children: <Widget>
+        [
+          SizedBox(height: 50),
+          Text(
+              'Listado de productos',
+              style: TextStyle(
+                  color: Color.fromARGB(232, 14, 61, 100),
+                  fontSize: 28,
+                  fontWeight: FontWeight.w700),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            getRecipes()
+        ],
+      )      
     );
   }
 
